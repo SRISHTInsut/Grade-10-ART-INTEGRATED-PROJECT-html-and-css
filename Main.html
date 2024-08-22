@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<style type="text/css">
+		*{
+			margin: 0; padding:0;  box-sizing: border-box; 
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		header{
+			width: 100%; height: 100vh;
+			background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.1)) ,url('https://static.gigapan.com/gigapans0/20940/images/20940-622x360.jpg');
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+
+		nav{
+			width: 100%; height: 15vh;
+			background: rgba(0, 0, 0, 0.2);
+			color: white;
+			display: flex; justify-content: space-between;
+			align-items: center; text-transform: uppercase; 
+		}
+
+		nav .logo{
+			width: 25%; text-align: center;
+		}
+
+		nav .menu{
+			width: 40%; 
+			display: flex; justify-content: space-evenly;
+		}
+
+		nav .menu a{
+			width: 25%;
+			text-decoration: none; color: white; 
+			font-weight: bold;
+		}
+
+		main{
+			width: 100%;
+			height: 85vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: white;
+		}
+
+		section h3{
+			font-size: 35px; font-weight: 200; letter-spacing: 2px;
+			text-shadow: 1px 1px 2px black;
+		}
+
+		section h1{
+			margin: 30px 25px 20px 0;
+			font-size: 55px;
+			font-weight: 700;
+			text-shadow: 2px 1px 5px black;
+			text-transform: uppercase; 
+
+		}
+
+		section a{
+			padding: 12px 30px;
+			border-radius: 4px;
+			outline: none;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 500;
+			text-decoration: none;
+			letter-spacing: 1px;
+			transition: all .5s ease;
+		}
+
+		section .btnone{
+			background: white;
+			color: black;
+
+		}
+
+		.btnone:hover{
+			background: #00b894;
+			color: white;
+		}
+
+		.change_content:after{
+			content: '';
+			animation: changetext 10s infinite linear;
+			color: #00b894;
+		}
+
+		@keyframes changetext{
+			0%{content:"Bengluru";}
+			13%{content:"Agra";}
+			26%{content:"Jaipur";}
+			40%{content:"Kerela";}
+			55%{content:"Delhi";}
+			70%{content:"Mumbai"}
+			84%{content:"Kolkata"}
+			100%{content:"Varanasi"}
+		}
+
+	</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"><h1 class="animate__animated animate__heartBeat animate__infinite	infinite">Mera Bharat Mahaan!</h1></div>
+		<div class="menu">
+			<a href="Index.html">Main Project!</a>
+			<a href="portfolio.html">About</a>
+			<a href="contactus.html">Contact</a>
+		</div>
+	</nav>	
+
+		<main>
+			<section>
+				<h3 align="center">Welcome to India!</h3>
+				<h1>DO COME AND VISIT 
+<br>
+					<span class="change_content"></span></h1>
+				<a href="https://en.wikipedia.org/wiki/India" class="btnone">Learn More</a>
+			</section>
+		</main>
+</header>
+</body>
+</html>
